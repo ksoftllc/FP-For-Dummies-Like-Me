@@ -36,7 +36,7 @@ import Foundation
  
  A higher order function is simply a function that takes a function or closure as an argument. You'be been using them if you've ever used callbacks. Callbacks are functions that will execute in the future, when some other action has completed or failed. But there are other ways to compose other than callbacks. Let's look at some important ways to compose using morphisms and wrapper types.
  
- ## Introducing Functors - Think Mappable
+ ## Introducing Functors - Think Map-able
  
  Feel free to search online for the complete definition of a Functor. For the purposes of this discussion, what you need to know is that a Functor is a wrapper type that has a `map` function. A `map` function takes a transformation function (or morphism) as an argument and applies that transformation to the value or values that are beging wrapped in the Functor. As you recall, a transformation function has the shape `(A) -> B`. Here is an example using an `Array<Int>`'s `map` function:
  */
