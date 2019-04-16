@@ -75,9 +75,9 @@ print(shoutedHello())
  For the discussions of patterns, I'm going to focus on generic shapes. So a function with a type of (String) -> String would be of the shape (A) -> A because the input is the same type as the output. In contrast, a function that turns an Int into a String would have a shape of (A) -> B because the input and output types are different.
  
  ![From Scott Wlaschin's Functional Programming Patterns slides](apple_to_apple.png)
- ## Shape 1 - Type Variation (a.k.a. Endofunctor) - (A) -> A
+ ## Shape 1 - Type Variation (a.k.a. Endomorphism) - (A) -> A
  
- One of the most frequent shapes for functions is a function whose single input and single output are of the same type. These are officially classified as endofunctors. However, I want to focus on what it does rather than use technically correct terminology. So I'm going to refer to it simply as a type specific function because it takes a type and returns the same type. Let's dive into some simple examples.
+ One of the most frequent shapes for functions is a function whose single input and single output are of the same type. These are officially classified as endomorphism. However, I want to focus on what it does rather than use technically correct terminology. So I'm going to refer to it simply as a type specific function because it takes a type and returns the same type. Let's dive into some simple examples.
  
  Here are two simple functions that take a String and return a string based on that String. Since the output of either is a String and the input of either is a String, then they can be composed one after the other as well as used independently.
  
